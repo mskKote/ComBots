@@ -1,0 +1,95 @@
+
+    body{
+        background-image: url(../items/bgImage.png);
+        background-attachment: fixed;
+        background-repeat: repeat;        
+        background-position-x: -100vh;
+
+        padding:0px;
+        margin: 0px;
+        border: 0px;
+    
+    }
+
+
+    header{
+        margin-bottom: 5px;
+        padding: 1px 5% 10px 3%;   
+        opacity: 0.80;
+        border-bottom: 3px solid black;
+        background-color: whitesmoke;
+    }
+   
+    aside{
+        padding:5px;
+        width: 19%;
+        float: right;
+        border-radius: 5%;
+        border-top-left-radius: 4%;
+
+        margin-right:0.4%; 
+        background-color: whitesmoke;
+    }
+   
+    div#bots{
+        padding:5px;
+        margin: 0% 20.5% 10px 4%;  ;
+        height: 100%;
+        border-radius: 5%;
+        border-top-right-radius: 1%;
+        background-color: whitesmoke;
+        opacity: 0.97;
+        
+        width: 74%;
+    }
+
+    footer{
+        margin-top: 1%;
+        padding: 10px 5% 1px 3%;
+
+    
+        
+        border-top: 3px solid black;
+        background-color: whitesmoke;
+        opacity: 0.80;
+    }
+      
+    li.botFrame { 
+      padding: 1px 3px;
+        margin: 8px 20px;
+/*
+        */  
+        
+        width: 27%;
+        flex-wrap: wrap;
+        list-style: none;
+        border-color: black;
+        border-radius: 5%;
+        border-style: solid;
+        border: 3px 1px;    
+
+       /* height: 75px; width: 150px;*/
+        background-color: whitesmoke;
+        opacity: 1; 
+    }
+
+
+    button{
+        width: 100%; 
+        font-family: 'Courier New', Courier, monospace;
+        margin: 0.1px 0%;
+        font-weight: bolder;  
+    }
+    
+    h1, h2, h3, h4 {
+        font-family: "Monaco", "Courier", monospace;
+    }
+
+    h3, h4{
+        font-weight: bold;
+    }
+    p {
+        font-size: 15px;
+        font-family:  monospace;
+    }
+    
