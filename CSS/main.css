@@ -1,0 +1,62 @@
+    body{
+    
+        padding:0px;
+        margin: 0px;
+        border: 0px;
+    
+    }
+    header{
+        margin-bottom: 5px;
+        padding: 1px 5% 10px 3%;   
+        opacity: 0.80;
+        border-bottom: 3px solid black;
+        background-color: whitesmoke;
+    }
+    
+    aside{
+        padding: 5px;
+        width: 23%;
+        float: right;
+        border-radius: 5%;
+        border-top-left-radius: 4%;
+
+        margin-right:0.4%; 
+        background-color: whitesmoke;
+    }
+    div{
+        opacity: 0.97;
+        height: 100%;
+        border-radius: 5%;
+        border-top-right-radius: 1%;
+        
+    }
+
+    footer{
+        margin-top: 1%;
+        padding: 10px 5% 1px 3%;
+
+        border-top: 3px solid black;
+        background-color: whitesmoke;
+        opacity: 0.80;
+    }
+    
+    button{
+        width: 100%; 
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bolder;  
+        margin: 0.1px 0%;
+        background-color: seashell;
+        opacity: 0.35;
+    }
+
+    h1, h2, h3, h4 {
+        font-family: "Monaco", "Courier", monospace;
+    }
+
+    h3, h4{
+        font-weight: bold;
+    }
+    p {
+        font-size: 15px;
+        font-family:  monospace;
+    }

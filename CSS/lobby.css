@@ -1,0 +1,60 @@
+    body{
+        background-image: url(../items/bgImage.png);
+        background-attachment: fixed;
+        background-repeat: repeat;        
+        background-position-x: -100vh;
+    }
+    header{
+        margin-bottom: 5px;
+        padding: 1px 5% 10px 3%;   
+        opacity: 0.80;
+        border-bottom: 3px solid black;
+        background-color: whitesmoke;
+    }
+    
+
+       aside{
+        padding: 5px;
+        width: 23%;
+        float: right;
+        border-radius: 5%;
+        border-top-left-radius: 4%;
+
+        margin-right:0.4%; 
+        background-color: whitesmoke;
+       }  
+       div#workspace{
+        padding:5px 10px 5px 20px;
+        margin: 0% 20.5% 10px 3%;  
+        
+        
+        border-radius: 5%;
+        border-top-right-radius: 1%;
+        background-color: whitesmoke;
+        opacity: 0.97;
+        
+        height: 100%;
+        width: 70%;
+    }
+    
+   
+    button#authorization{
+        background-color: rgba(255, 245, 238, 0.335);
+        opacity: 1;
+    }
+
+    p.search {
+        border-radius: 15px;
+        background-color: #1a1c20;
+        padding: 1%;
+        padding-left: 20%;
+    }
+
+    input.search_f {
+        background-color: #2b2d33;
+        border-style: none;
+        border-bottom: 4px solid #41b682;
+        border-radius: 10px;
+        height: 4vh;
+        width: 40vw;
+    }

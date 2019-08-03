@@ -1,0 +1,47 @@
+    body{
+        background-image: none;
+        background-color: #2b2d33;
+        padding:0px;
+        margin: 0px;
+        border: 0px;
+    }
+
+    div.collection{
+        display: none;
+    }
+        aside#nav {
+            font: inherit;
+            background: inherit;
+            border: inherit;
+            
+            padding: 5px;
+            height: 200px;
+            width: 25%;
+            float: left;
+            background-color: whitesmoke;
+            margin-left:0.8%; 
+        }
+        aside#menu {
+            font: inherit;
+            background: inherit;
+            border: inherit;
+            height: 200px;
+            padding: 5px;
+            width: 10%;
+            float: right;
+            background-color: whitesmoke;
+            margin-right:0.4%; 
+        }   
+        div#content{
+            font: inherit;
+           
+            border: solid black 1px;
+            border-radius: 0%;
+            background-color: whitesmoke;
+            width: 80%;
+            height: 400px;
+            
+            margin-left: 5%;
+            margin-right: 20%;
+            
+        }

@@ -4,55 +4,64 @@
 	<title>ComBots</title>
 	<meta charset="UTF-8">
 	<link rel="icon" type="image/png" href="items/favicon.png" >
-	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="CSS/lobby.css">
+
  </head>
 <body>
-	<!--Заголовок. Тут будет приветствие и верхняя менюшка для авторизации-->
+	<script defer src="./JS/UIcontroller.js"> </script>
+
+<!--Заголовок. Тут будет приветствие и верхняя менюшка для авторизации-->
 	<header>
 		<article>
 		<h2>Добро пожаловать в магазин коммерческих Discord ботов!</h2>
 		<h4>Здесь вы можете приобрести или заказать ботов, <br>
 			а также пожертвовать их создателям!</h4></article>
 	</header>
-	
-	<!--Фрейм с менюхой-->
+
+
+<!--Фрейм с менюхой-->
 	<aside>
 		<form>
-			<button>Авторизация</button>
+			<button id="authorization">Войти через Discord</button>
+
+			<button><a href="./HTML/user_office.html">Личный кабинет</a></button>	
+
 			<button>Бухгалтерия</button>
-			<button>Личный кабинет</button>	
-
-			<br><button>Заказать бота</button>
+			
+			<button>Заказать бота</button>
 		</form>
-	
 	</aside>
-	<!--Фрейм с ботами-->
-	<div id="bots">			
-			<h4> Настройка списка с ботами </h4>
-			<form>
-				<p>элементы поиска</p>
-			</form>
+<!--блок с ботами/заказами-->
+	<div id="workspace">
+		<h4> Настройка списка с ботами </h4>
+		<form>
+			<p>элементы поиска</p>
+			<p class="search">
+				<input class="search_f" name="q" placeholder="Поиск">
+				<!-- <input class="search_b" type="submit" value="Найти"></p> -->
+		</form>
+	<ul>
 
-		<ul>
+			<li class="botFrame">Бот
+				<p>Текст, чтобы не было пусто. <br>
+				   Текст, чтобы не было пусто. </p><br></li>
+			<li class="botFrame">Бот
+				<p>Текст, чтобы не было пусто. <br>
+				   Текст, чтобы не было пусто. </p><br></li>
+			<li class="botFrame">Бот
+				<p>Текст, чтобы не было пусто. <br>
+				   Текст, чтобы не было пусто. </p><br></li>
 
-				<li class="botFrame">Бот
-					<p>Текст, чтобы не было пусто. <br>
-					   Текст, чтобы не было пусто. </p><br></li>
-				<li class="botFrame">Бот
-					<p>Текст, чтобы не было пусто. <br>
-					   Текст, чтобы не было пусто. </p><br></li>				
-				<li class="botFrame">Бот
-					<p>Текст, чтобы не было пусто. <br>
-					   Текст, чтобы не было пусто. </p><br></li>					
-					
-		</ul>
+	</ul>
 	</div>
-
+s
 	<!--информация о нас-->
 	<footer>
 			<h3>Информация о нас</h3>
 			<p>Мы группа независимых разработчиков, желающая сделать Discord лучше.</p>
 			<p>Связаться с нами: ну и тут какие-нибудь майлы, телефоны </p>
 	</footer>
+	
 </body>
 </html>
