@@ -3,21 +3,18 @@
         "password": "123", 
         "wallet": "0",
         "autority": "0",
-        "gitRepo": ["undefined"],
-        "DiscordId": ""
+        "gitRepo": ["undefined"]
     },
     "username1": {
         "password": "qwerty", 
         "wallet": "1",
         "autority": "1",
-        "gitRepo": ["undefined"],
-        "DiscordId": ""
+        "gitRepo": ["undefined"]
     },
     "username2": {
         "password": "FU", 
         "wallet": "2",
         "autority": "2",
-        "gitRepo": ["undefined"],
-        "DiscordId": ""
+        "gitRepo": ["undefined"]
     }
 }

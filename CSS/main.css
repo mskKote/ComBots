@@ -15,20 +15,15 @@
     
     aside{
         padding: 5px;
-        width: 23%;
-        float: right;
         border-radius: 5%;
-        border-top-left-radius: 4%;
 
-        margin-right:0.4%; 
         background-color: whitesmoke;
     }
     div{
         opacity: 0.97;
-        height: 100%;
+        
         border-radius: 5%;
         border-top-right-radius: 1%;
-        
     }
 
     footer{
@@ -42,21 +37,23 @@
     
     button{
         width: 100%; 
-        font-family: 'Courier New', Courier, monospace;
+        font-family: 'Roboto Slab', serif;
         font-weight: bolder;  
         margin: 0.1px 0%;
         background-color: seashell;
         opacity: 0.35;
     }
 
-    h1, h2, h3, h4 {
-        font-family: "Monaco", "Courier", monospace;
+    h1, h2 {
+        font-family: 'Russo One', sans-serif; 
+        font-weight: lighter;
     }
 
     h3, h4{
-        font-weight: bold;
+        font-family: 'Literata', serif;
+       
     }
     p {
         font-size: 15px;
-        font-family:  monospace;
+        font-family: 'Ubuntu Condensed', sans-serif;
     }
