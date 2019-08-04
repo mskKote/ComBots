@@ -1,9 +1,7 @@
     body{
-    
         padding:0px;
         margin: 0px;
         border: 0px;
-    
     }
     header{
         margin-bottom: 5px;
@@ -12,11 +10,14 @@
         border-bottom: 3px solid black;
         background-color: whitesmoke;
     }
-    
+    img{
+        color: hsl(357, 92%, 66%);
+        font-family: 'Literata', serif;
+        font-family: 'Ubuntu Condensed', sans-serif;
+    }
     aside{
         padding: 5px;
         border-radius: 5%;
-
         background-color: whitesmoke;
     }
     div{
@@ -42,6 +43,7 @@
         margin: 0.1px 0%;
         background-color: seashell;
         opacity: 0.35;
+        text-align: center;
     }
 
     h1, h2 {
@@ -51,9 +53,12 @@
 
     h3, h4{
         font-family: 'Literata', serif;
-       
     }
     p {
         font-size: 15px;
         font-family: 'Ubuntu Condensed', sans-serif;
+    }
+    ::placeholder{
+        color:gainsboro;
+        font-family: 'Roboto Slab', serif;
     }
