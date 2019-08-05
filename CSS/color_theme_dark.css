@@ -1,0 +1,37 @@
+header{
+    border-bottom-color: black;
+    background-color:    whitesmoke;
+}
+aside{
+    background-color: whitesmoke;
+}
+div#workspace{
+    background-color: #353838;    
+}
+button.authorization{
+    background-color: rgba(255, 245, 238, 0.335);
+    border-top-color: gainsboro;
+    border-bottom-color: hsl(12, 69%, 50%);
+
+    border-left-color:  gainsboro;
+    border-right-color: gainsboro;  
+}
+p.search {   
+    background-color: #1a1c20; 
+}
+input.search_f {
+    background-color:   #2b2d33;
+    border-bottom-color:#41b682;
+    color:whitesmoke;
+}
+/* button.filter_btn{
+    color: whitesmoke;
+} */
+div.OrderFrame{
+    border-color:     #2b2d33;
+    background-color: #414545;
+}
+button.OrderFrame{
+    background-color: rgba(255, 245, 238, 0.335);
+    border-color:     gainsboro;
+}

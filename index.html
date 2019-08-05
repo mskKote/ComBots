@@ -6,6 +6,7 @@
 	<link rel="icon" type="image/png" href="items/favicon.png" >
 	<link rel="stylesheet" type="text/css" href="CSS/main.css">
 	<link rel="stylesheet" type="text/css" href="CSS/lobby.css">
+	<link rel="stylesheet" type="text/css" href="CSS/color_theme_dark.css">
 <!--Дикий набор шрифтов на все случаи жизни - Check.
 	literata, Oswald, PT+Sans, 
 	Roboto Slab, Ubuntu Condensed  для текста
@@ -30,7 +31,6 @@
 	<aside>
 		<form>
 			<button class="authorization">
-			
 			Авторизация</button>
 			<button><a href="./HTML/user_office.html">Личный кабинет</a></button>	
 			<button>Бухгалтерия</button>		
@@ -40,9 +40,18 @@
 <!--блок с ботами/заказами-->
 	<div id="workspace">
 		<form id="search">
-			<p class="search">
-				<input class="search_f" name="q" placeholder="Поиск">
-				<!-- <input class="search_b" type="submit" value="Найти"></p> -->
+			<p class="search">	<!-- поменять название класса на более подходящее -->
+				<input class="search_f" name="q" placeholder="Поиск"> <br>
+				<form id="panel_s">
+					<button class="filter_btn">Текст</button>
+					<button class="filter_btn">Текст</button>
+					<button class="filter_btn">Текст</button>
+					<button class="filter_btn">Текст</button>
+					<button class="filter_btn">Текст</button>
+					<button class="filter_btn">Текст</button>
+					<button class="filter_btn">Текст</button> <!-- вряд ли кнопок понадобится так много но для шаблона сойдет-->
+				</form>
+			</p>
 		</form>
 	
 		<form>
