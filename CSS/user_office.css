@@ -24,21 +24,6 @@
 /*                  10.8%              */
             background-color: whitesmoke;    
         }
-        aside#menu {
-            float: right;
-
-            font: inherit;
-            background: inherit;
-            border: inherit;
-
-            padding: 5px;
-
-            height: 250px;
-            width: 15%;
-            margin-right: 0.4%; 
-/*                  15.4%              */
-            background-color: whitesmoke;           
-        }   
         div#content{
             font: inherit;
            
@@ -50,5 +35,21 @@
             height: 400px;
            
             margin-left: 12%;
-            margin-right: 17%;
+            margin-right: 27%;
+        }
+        
+        aside#menu {
+            float: right;
+
+            font: inherit;
+            background: inherit;
+            border: inherit;
+            
+            padding: 5px;
+
+            height: 250px;
+            width: 10%;
+            margin-left:0.8%; 
+/*                  10.8%              */
+            background-color: whitesmoke;    
         }
