@@ -1,16 +1,18 @@
 "use strict"
 
-let light_state = "ON";
+let state = "ON";
 
 function theme(){
-    if (light_state === "ON") {
-        light_state = "OFF";
-        let light = document.getElementById("theme");
-        light.removeAttribute("href");
-        }
-    else {
-        light_state = "ON";
-        let light = document.getElementById("theme");
+    let light = document.getElementById("theme");
+    
+    if (state === "ON") {
+        state = "OFF";
         light.setAttribute("href", "CSS/color_theme_dark.css");
     }
+    else {
+        state = "ON";
+        let light = document.getElementById("theme");
+        light.removeAttribute("href");
+    }
 }
+//<button type="button" class="navbar" onclick="theme()">Выкл/вкл свет</button>

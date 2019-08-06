@@ -9,8 +9,7 @@
 <!--Через кнопку выбираем либо 
 	включать файл ниже, либо нет. ID для JS.
 -->	
-<link id="theme" rel="stylesheet" type="text/css" 
-href="CSS/color_theme_dark.css">
+<link id="theme" rel="stylesheet" type="text/css">
 <!--Дикий набор шрифтов на все случаи жизни - Check.
 	literata, Oswald, PT+Sans, 
 	Roboto Slab, Ubuntu Condensed  для текста
@@ -28,17 +27,19 @@ href="https://fonts.googleapis.com/css?family=Literata|Oswald|PT+Sans|Roboto+Sla
 		<h1 id="TOP_article">ComBots</h1>				
 					
 		<div id="navbar">
-		<button class="navbar" onclick="theme()">Выкл/вкл свет</button>
+		<button type="button" class="navbar" onclick="theme()">Выкл/вкл свет</button>
 	</div>
 	<!--Эта кнопка временно будет вести в личный кабинет.-->
-	<button class="authorization navbar" onclick="">Авторизация</button>
+	<form action="./HTML/user_office.html">
+		<button type="submit" class="authorization navbar" onclick="">Авторизация</button>
+	</form>	
 	</header>	
 <!--Надпись приветствия-->
 	<div id="welcome-land">
 			<article>
-					<h1>Добро пожаловать в биржу ботов ComBots</h1>
+					<h1>Добро пожаловать в биржу ботов ComBots!</h1>
 					<h4>Здесь вы можете приобрести или заказать ботов, <br>
-						а также пожертвовать их создателям!</h4>
+						а также пожертвовать их создателям.</h4>
 			</article>
 	</div>
 
@@ -51,13 +52,13 @@ href="https://fonts.googleapis.com/css?family=Literata|Oswald|PT+Sans|Roboto+Sla
 				<!-- <input class="search_b" type="submit" value="Найти"></p> -->
 				<br>
 				<form id="panel_s">
-					<button class="filter_btn">Текст</button>
-					<button class="filter_btn">Текст</button>
-					<button class="filter_btn">Текст</button>
-					<button class="filter_btn">Текст</button>
-					<button class="filter_btn">Текст</button>
-					<button class="filter_btn">Текст</button>
-					<button class="filter_btn">Текст</button> 
+					<button type="button" class="filter_btn">Текст</button>
+					<button type="button" class="filter_btn">Текст</button>
+					<button type="button" class="filter_btn">Текст</button>
+					<button type="button" class="filter_btn">Текст</button>
+					<button type="button" class="filter_btn">Текст</button>
+					<button type="button" class="filter_btn">Текст</button>
+					<button type="button" class="filter_btn">Текст</button> 
 				<!-- вряд ли, кнопок понадобится так много, но для шаблона сойдет-->
 				</form>
 		</form>
@@ -76,79 +77,79 @@ href="https://fonts.googleapis.com/css?family=Literata|Oswald|PT+Sans|Roboto+Sla
 
 				</table>	
 
+				<button type="button" class="OrderFrame">Откликнуться</button>	
+			</div>
+			<div class="OrderFrame">
+			<!--------------Название проекта-------------->
+				<h4 class="OrderFrame">Название проекта</h4>
+			<!--------------Описание заказа-------------->
+				<p class="OrderFrame">Текст, чтобы не было пусто. 
+				   Текст, чтобы не было пусто.
+				   Текст, чтобы не было пусто. </p>
+			<!--------------социальные сети заказа-------------->
+				<table class="OrderFrame">
+			
+				</table>	
+		
+				<button type="button" class="OrderFrame">Откликнуться</button>	
+			</div>
+
+			<div class="OrderFrame">
+			<!--------------Название проекта-------------->
+				<h4 class="OrderFrame">Название проекта</h4>
+			<!--------------Описание заказа-------------->
+			<p class="OrderFrame">Текст, чтобы не было пусто. 
+				   Текст, чтобы не было пусто.
+				   Текст, чтобы не было пусто. </p>
+			<!--------------социальные сети заказа-------------->
+				<table class="OrderFrame">
+					
+				</table>	
+		
+				<button type="button" class="OrderFrame">Откликнуться</button>	
+			</div>
+			<div class="OrderFrame">
+			<!--------------Название проекта-------------->
+				<h4 class="OrderFrame">Название проекта</h4>
+			<!--------------Описание заказа-------------->
+				<p class="OrderFrame">Текст, чтобы не было пусто. 
+			   Текст, чтобы не было пусто.
+			   Текст, чтобы не было пусто. </p>
+			<!--------------социальные сети заказа-------------->
+				<table class="OrderFrame">
+
+				</table>	
+				
+				<button class="OrderFrame">Откликнуться</button>	
+			</div>
+
+			<div class="OrderFrame">
+			<!--------------Название проекта-------------->
+				<h4 class="OrderFrame">Название проекта</h4>
+			<!--------------Описание заказа-------------->
+				<p class="OrderFrame">Текст, чтобы не было пусто. 
+			   Текст, чтобы не было пусто.
+			   Текст, чтобы не было пусто. </p>
+			<!--------------социальные сети заказа-------------->
+				<table class="OrderFrame">
+		
+				</table>	
+		
 				<button class="OrderFrame">Откликнуться</button>	
 			</div>
 			<div class="OrderFrame">
-					<!--------------Название проекта-------------->
-						<h4 class="OrderFrame">Название проекта</h4>
-					<!--------------Описание заказа-------------->
-						<p class="OrderFrame">Текст, чтобы не было пусто. 
-						   Текст, чтобы не было пусто.
-						   Текст, чтобы не было пусто. </p>
-					<!--------------социальные сети заказа-------------->
-						<table class="OrderFrame">
-		
-						</table>	
-		
-						<button class="OrderFrame">Откликнуться</button>	
-			</div>
-
-			<div class="OrderFrame">
-					<!--------------Название проекта-------------->
-						<h4 class="OrderFrame">Название проекта</h4>
-					<!--------------Описание заказа-------------->
-						<p class="OrderFrame">Текст, чтобы не было пусто. 
-						   Текст, чтобы не было пусто.
-						   Текст, чтобы не было пусто. </p>
-					<!--------------социальные сети заказа-------------->
-						<table class="OrderFrame">
-		
-						</table>	
-		
-						<button class="OrderFrame">Откликнуться</button>	
-			</div>
-			<div class="OrderFrame">
-							<!--------------Название проекта-------------->
-								<h4 class="OrderFrame">Название проекта</h4>
-							<!--------------Описание заказа-------------->
-								<p class="OrderFrame">Текст, чтобы не было пусто. 
-								   Текст, чтобы не было пусто.
-								   Текст, чтобы не было пусто. </p>
-							<!--------------социальные сети заказа-------------->
-								<table class="OrderFrame">
-				
-								</table>	
-				
-								<button class="OrderFrame">Откликнуться</button>	
-			</div>
-
-			<div class="OrderFrame">
-					<!--------------Название проекта-------------->
-						<h4 class="OrderFrame">Название проекта</h4>
-					<!--------------Описание заказа-------------->
-						<p class="OrderFrame">Текст, чтобы не было пусто. 
-						   Текст, чтобы не было пусто.
-						   Текст, чтобы не было пусто. </p>
-					<!--------------социальные сети заказа-------------->
-						<table class="OrderFrame">
-		
-						</table>	
-		
-						<button class="OrderFrame">Откликнуться</button>	
-			</div>
-			<div class="OrderFrame">
-							<!--------------Название проекта-------------->
-								<h4 class="OrderFrame">Название проекта</h4>
-							<!--------------Описание заказа-------------->
-								<p class="OrderFrame">Текст, чтобы не было пусто. 
-								   Текст, чтобы не было пусто.
-								   Текст, чтобы не было пусто. </p>
-							<!--------------социальные сети заказа-------------->
-								<table class="OrderFrame">
-				
-								</table>	
-				
-								<button class="OrderFrame">Откликнуться</button>	
+			<!--------------Название проекта-------------->
+				<h4 class="OrderFrame">Название проекта</h4>
+			<!--------------Описание заказа-------------->
+				<p class="OrderFrame">Текст, чтобы не было пусто. 
+			   Текст, чтобы не было пусто.
+			   Текст, чтобы не было пусто. </p>
+			<!--------------социальные сети заказа-------------->
+				<table class="OrderFrame">
+			
+				</table>	
+			
+				<button class="OrderFrame">Откликнуться</button>	
 			</div>
 		</form>
 	</div>
