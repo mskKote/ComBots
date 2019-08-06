@@ -8,8 +8,10 @@
         margin-bottom: 5px;
         padding: 1px 5% 10px 3%;   
         opacity: 0.80;
-        border-bottom: 3px solid;
+        border-bottom: 3px solid black;
+        background-color: whitesmoke;
     }
+    
     aside{
         padding: 5px;
         width: 23%;
@@ -18,26 +20,33 @@
         border-top-left-radius: 4%;
 
         margin-right:0.4%; 
+        background-color: whitesmoke;
     }  
     div#workspace{
+       
         margin: 0% 25% 10px 3%;  
     
         border-radius: 10px;
         border-top-left-radius: 4.2%;
         border-top-right-radius: 4.2%;
+        background-color: whitesmoke;
         opacity: 0.97;
         
         min-height: 400px;
         height: 100%;      
     }
+      
     button.authorization{
+        background-color: rgba(255, 245, 238, 0.335);
         opacity: 1;
 
-        border-top: 2px solid;
-        border-bottom: 4px solid;
+        border-top: 2px solid gainsboro;
+        /*
+        border-top: 4px solid #41b682;*/
+        border-bottom: 4px solid hsl(12, 69%, 50%);
 
-        border-left: 2px solid;
-        border-right: 2px solid;
+        border-left: 2px solid gainsboro;
+        border-right: 2px solid gainsboro;
 
         border-radius: 10px;
         border-bottom-left-radius: 0px;
@@ -45,20 +54,49 @@
         
     }
     p.search {
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
+        border-radius: 15px;        
+        background-color: #1a1c20;
         padding: 1%;
+        padding-left: 20%;
         margin-top: 0%;   
     }
     input.search_f {
+        background-color: #2b2d33;
         border-style: none;
-        border-bottom: 3.5px solid;
+        border-bottom: 3.5px solid #41b682;
         border-radius: 10px;
 
         height: 4vh;
         width: 40vw;
-        margin-left: 20%;
+
+        margin-right: 20%;
         padding-left: 1vw;
+        color:whitesmoke;
+    }
+
+    div.OrderFrame{
+        width: 46%;
+        float: left;
+
+        border-radius: 10px;
+        border: 2px solid #2b2d33;  
+        padding: 5px;
+        margin: 0% 0% 2px 1%;
+        background-color: whitesmoke;
+        opacity: 1;
+        
+    }
+    button.OrderFrame{
+        background-color: rgba(255, 245, 238, 0.335);
+        opacity: 1;
+
+        border: 2px solid gainsboro;
+        border-radius: 10px;
+    }
+   
+    h4, h5, h6 .OrderFrame{
+        margin-block-start: 0%;
+        margin-block-end: 0%; 
     }
     button.filter_btn{
         width: 10%;
@@ -68,26 +106,4 @@
 
         font-family: 'Roboto Slab', serif;
         font-weight: bolder;
-    }
-    div.OrderFrame{
-        width: 46%;
-        float: left;
-
-        border-radius: 10px;
-        border: 2px solid;
-        padding: 5px;
-        margin: 0% 0% 2px 1%;
-        opacity: 1;
-        
-    }
-    button.OrderFrame{
-        opacity: 1;
-
-        border: 2px solid;
-        border-radius: 10px;
-    }
-   
-    h4, h5, h6 .OrderFrame{
-        margin-block-start: 0%;
-        margin-block-end: 0%; 
     }

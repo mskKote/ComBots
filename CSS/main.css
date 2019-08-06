@@ -39,7 +39,7 @@
     button{
         width: 100%; 
         font-family: 'Roboto Slab', serif;
-        font-weight: bolder;  
+        font-weight: normal;  
         margin: 0.1px 0%;
         background-color: rgba(255, 245, 238, 0.335);
         opacity: 0.35;
@@ -65,7 +65,7 @@
         font-family: 'Ubuntu Condensed', sans-serif;
     }
     a {
-        color: rgb(131, 0, 92);  
+        color: black;  
     }
     ::placeholder{
         color:gainsboro;
