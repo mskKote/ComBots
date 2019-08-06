@@ -1,16 +1,18 @@
-"use strict"
+//"use strict"
 
-let state = "ON";
+window.addEventListener("DOMContentLoaded", function(){
+    if (localStorage.darkTheme == "true") theme(true);
+})
 
-function theme(){
+function theme(referred = false){
     let light = document.getElementById("theme");
-    
-    if (state === "ON") {
-        state = "OFF";
+    console.log(localStorage.darkTheme, typeof localStorage.darkTheme);
+    if (localStorage.darkTheme == "false" || referred) {
+        localStorage.darkTheme = "true";
         light.setAttribute("href", "CSS/color_theme_dark.css");
     }
     else {
-        state = "ON";
+        localStorage.darkTheme = "false";
         let light = document.getElementById("theme");
         light.removeAttribute("href");
     }
