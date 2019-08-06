@@ -3,9 +3,9 @@
         margin: 0px;
         border: 0px;
 
-        background-image: url(../items/Image.png);
-        background-attachment: fixed;
-        background-repeat: repeat;      
+        background-image: url(../items/back.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;      
     }
     header{
         margin-bottom: 5px;
