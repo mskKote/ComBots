@@ -113,4 +113,5 @@
         border-bottom: 4px solid hsl(12, 69%, 50%);
         border-left: 2px solid gainsboro;
         border-right: 2px solid gainsboro; 
+        margin-right: 10px;
     }
