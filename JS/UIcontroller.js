@@ -9,7 +9,7 @@ function theme(referred = false){
     console.log(localStorage.darkTheme, typeof localStorage.darkTheme);
     if (localStorage.darkTheme == "false" || referred) {
         localStorage.darkTheme = "true";
-        light.setAttribute("href", "CSS/color_theme_dark.css");
+        light.setAttribute("href", "/CSS/color_theme_dark.css");
     }
     else {
         localStorage.darkTheme = "false";

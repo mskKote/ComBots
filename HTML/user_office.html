@@ -21,10 +21,16 @@
  </head>
 <body>
     <header>
-		<article>
-		    <h2><a href="../index.html">Обратно на главную</a></h2>
-        </article>
-    </header>
+		<h1 id="TOP_article" onclick="history.back()">ComBots</h1>				
+					
+		<div id="navbar">
+		<button type="button" class="navbar" onclick="theme()">Выкл/вкл свет</button>
+	</div>
+	<!--Эта кнопка временно будет вести в личный кабинет.-->
+	<form action="./HTML/user_office.html">
+		<button type="submit" class="authorization navbar" onclick="">Авторизация</button>
+	</form>	
+	</header>	
     
     <div class="div_collection">
     <!--левая менюшка-->      
