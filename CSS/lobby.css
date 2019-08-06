@@ -6,12 +6,19 @@
     }
     header{
         margin-bottom: 5px;
-        padding: 1px 5% 10px 3%;   
         opacity: 0.80;
         border-bottom: 3px solid black;
         background-color: whitesmoke;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
     }
-    
+ 
     aside{
         padding: 5px;
         width: 23%;
@@ -22,36 +29,26 @@
         margin-right:0.4%; 
         background-color: whitesmoke;
     }  
-    div#workspace{
-       
-        margin: 0% 25% 10px 3%;  
-    
+    div#workspace {
+        margin: 1vw 5vw 2vw 5vw;
         border-radius: 10px;
         border-top-left-radius: 4.2%;
         border-top-right-radius: 4.2%;
         background-color: whitesmoke;
         opacity: 0.97;
-        
         min-height: 400px;
-        height: 100%;      
+        height: 100%;
     }
       
     button.authorization{
         background-color: rgba(255, 245, 238, 0.335);
         opacity: 1;
-
         border-top: 2px solid gainsboro;
         /*
         border-top: 4px solid #41b682;*/
         border-bottom: 4px solid hsl(12, 69%, 50%);
-
         border-left: 2px solid gainsboro;
-        border-right: 2px solid gainsboro;
-
-        border-radius: 10px;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
-        
+        border-right: 2px solid gainsboro; 
     }
     p.search {
         border-radius: 15px;        

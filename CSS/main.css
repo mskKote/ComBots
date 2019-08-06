@@ -5,15 +5,41 @@
     }
     header{
         margin-bottom: 5px;
-        padding: 1px 5% 10px 3%;   
         opacity: 0.80;
         border-bottom: 3px solid black;
         background-color: whitesmoke;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+    }
+    #welcome-land {
+        margin-top: 2vw;
+        margin-bottom: 1px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        padding: 10px;
+        border-radius: 10px;
     }
     img{
         color: hsl(357, 92%, 66%);
         font-family: 'Literata', serif;
         font-family: 'Ubuntu Condensed', sans-serif;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar {
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        min-width: 10vw;
     }
     aside{
         padding: 5px;
@@ -37,7 +63,6 @@
     }
     
     button{
-        width: 100%; 
         font-family: 'Roboto Slab', serif;
         font-weight: normal;  
         margin: 0.1px 0%;
