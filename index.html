@@ -1,54 +1,48 @@
 <!DOCTYPE html>
-<html lang="ru">
- <head>
+<html lang="ru"><head>
 	<title>ComBots</title>
 	<meta charset="UTF-8">
-	<link rel="icon" type="image/png" href="items/favicon.png" >
+	<link rel="icon" type="image/png" href="items/favicon.png">
 	<link rel="stylesheet" type="text/css" href="CSS/main.css">
 	<link rel="stylesheet" type="text/css" href="CSS/lobby.css">
 <!--Через кнопку выбираем либо 
 	включать файл ниже, либо нет. ID для JS.
 -->	
-<link id="color_theme_dark" rel="stylesheet" type="text/css" 
-href="CSS/color_theme_dark.css">
+<link id="color_theme_dark" rel="stylesheet" type="text/css" href="CSS/color_theme_dark.css">
 <!--Дикий набор шрифтов на все случаи жизни - Check.
 	literata, Oswald, PT+Sans, 
 	Roboto Slab, Ubuntu Condensed  для текста
 	Russo One для заголовков
 -->
-<link href="https://fonts.googleapis.com/css?family=Literata|Oswald|PT+Sans|Roboto+Slab|Russo+One|Ubuntu+Condensed&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Literata|Oswald|PT+Sans|Roboto+Slab|Russo+One|Ubuntu+Condensed&amp;display=swap" rel="stylesheet">
 
- </head>
+ <style type="text/css"></style><style type="text/css"></style></head>
 <body>
-	<script defer src="./JS/UIcontroller.js"> </script>
+	<script defer="" src="./JS/UIcontroller.js"> </script>
 
-<!--Заголовок. Тут будет приветствие и верхняя менюшка для авторизации-->
+
 	<header>
-		<article>
-		<h1>Добро пожаловать в биржу ботов ComBots</h1>
-		<h4>Здесь вы можете приобрести или заказать ботов, <br>
-			а также пожертвовать их создателям!</h4></article>
-	</header>
+<h1>ComBots</h1>
+			
+				
+					
+<div id="navbar"><button class="navbar">Бухгалтерия</button><button class="navbar"><a href="./HTML/order_dialog.html">Заказать бота</a></button><button class="navbar"><a href="./HTML/user_office.html">Личный кабинет</a></button></div>
+<button class="authorization navbar">Авторизация</button></header>
 
 
 <!--Фрейм с менюхой-->
-	<aside>
-		<form>
-			<button class="authorization">
-			
-			Авторизация</button>
-			<button><a href="./HTML/user_office.html">Личный кабинет</a></button>	
-			<button>Бухгалтерия</button>		
-			<button><a href="./HTML/order_dialog.html">Заказать бота</a></button>
-		</form>
-	</aside>
+	
 <!--блок с ботами/заказами-->
-	<div id="workspace">
+	<div id="welcome-land">
+<article>
+		<h1>Добро пожаловать в биржу ботов ComBots</h1>
+		<h4>Здесь вы можете приобрести или заказать ботов, <br>
+			а также пожертвовать их создателям!</h4></article></div><div id="workspace">
 		<form id="search">
 			<p class="search">
 				<input class="search_f" name="q" placeholder="Поиск">
 				<!-- <input class="search_b" type="submit" value="Найти"></p> -->
-				<form id="panel_s">
+				
 					<button class="filter_btn">Текст</button>
 					<button class="filter_btn">Текст</button>
 					<button class="filter_btn">Текст</button>
@@ -57,8 +51,8 @@ href="CSS/color_theme_dark.css">
 					<button class="filter_btn">Текст</button>
 					<button class="filter_btn">Текст</button> 
 				<!-- вряд ли, кнопок понадобится так много, но для шаблона сойдет-->
-				</form>
-		</form>
+				</p></form>
+		
 	
 		<form>
 			<div class="OrderFrame">
@@ -129,5 +123,7 @@ href="CSS/color_theme_dark.css">
 			<h6><p><b> All rights NOT reserved.</b></p></h6>
 	</footer>
 	
-</body>
-</html>
+
+
+
+</body></html>
