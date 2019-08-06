@@ -1,48 +1,55 @@
 <!DOCTYPE html>
-<html lang="ru"><head>
+<html lang="ru">
+ <head>
 	<title>ComBots</title>
 	<meta charset="UTF-8">
-	<link rel="icon" type="image/png" href="items/favicon.png">
+	<link rel="icon" type="image/png" href="items/favicon.png" >
 	<link rel="stylesheet" type="text/css" href="CSS/main.css">
 	<link rel="stylesheet" type="text/css" href="CSS/lobby.css">
 <!--Через кнопку выбираем либо 
 	включать файл ниже, либо нет. ID для JS.
 -->	
-<link id="color_theme_dark" rel="stylesheet" type="text/css" href="CSS/color_theme_dark.css">
+<link id="color_theme_dark" rel="stylesheet" type="text/css" 
+href="CSS/color_theme_dark.css">
 <!--Дикий набор шрифтов на все случаи жизни - Check.
 	literata, Oswald, PT+Sans, 
 	Roboto Slab, Ubuntu Condensed  для текста
 	Russo One для заголовков
 -->
-<link href="https://fonts.googleapis.com/css?family=Literata|Oswald|PT+Sans|Roboto+Slab|Russo+One|Ubuntu+Condensed&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Literata|Oswald|PT+Sans|Roboto+Slab|Russo+One|Ubuntu+Condensed&display=swap" rel="stylesheet">
 
- <style type="text/css"></style><style type="text/css"></style></head>
+ </head>
 <body>
-	<script defer="" src="./JS/UIcontroller.js"> </script>
+	<script defer src="./JS/UIcontroller.js"> </script>
 
-
+<!--Заголовок. Тут будет приветствие и верхняя менюшка для авторизации-->
 	<header>
-<h1>ComBots</h1>
-			
-				
+		<h1 id="TOP_article">ComBots</h1>				
 					
-<div id="navbar"><button class="navbar">Бухгалтерия</button><button class="navbar"><a href="./HTML/order_dialog.html">Заказать бота</a></button><button class="navbar"><a href="./HTML/user_office.html">Личный кабинет</a></button></div>
-<button class="authorization navbar">Авторизация</button></header>
-
-
-<!--Фрейм с менюхой-->
-	
-<!--блок с ботами/заказами-->
+		<div id="navbar">
+		<button class="navbar">Выкл/вкл свет</button>
+	</div>
+<!--Эта кнопка временно будет вести в личный кабинет.-->
+	<button class="authorization navbar"><a href="./HTML/user_office.html">Авторизация</a></button>
+	</header>	
+<!--Надпись приветствия-->
 	<div id="welcome-land">
-<article>
-		<h1>Добро пожаловать в биржу ботов ComBots</h1>
-		<h4>Здесь вы можете приобрести или заказать ботов, <br>
-			а также пожертвовать их создателям!</h4></article></div><div id="workspace">
+			<article>
+					<h1>Добро пожаловать в биржу ботов ComBots</h1>
+					<h4>Здесь вы можете приобрести или заказать ботов, <br>
+						а также пожертвовать их создателям!</h4>
+			</article>
+	</div>
+
+
+<!--блок с ботами/заказами-->
+	<div id="workspace">
 		<form id="search">
 			<p class="search">
 				<input class="search_f" name="q" placeholder="Поиск">
 				<!-- <input class="search_b" type="submit" value="Найти"></p> -->
-				
+				<br>
+				<form id="panel_s">
 					<button class="filter_btn">Текст</button>
 					<button class="filter_btn">Текст</button>
 					<button class="filter_btn">Текст</button>
@@ -51,10 +58,11 @@
 					<button class="filter_btn">Текст</button>
 					<button class="filter_btn">Текст</button> 
 				<!-- вряд ли, кнопок понадобится так много, но для шаблона сойдет-->
-				</p></form>
-		
+				</form>
+		</form>
 	
-		<form>
+		<form >
+
 			<div class="OrderFrame">
 			<!--------------Название проекта-------------->
 				<h4 class="OrderFrame">Название проекта</h4>
@@ -83,6 +91,7 @@
 		
 						<button class="OrderFrame">Откликнуться</button>	
 			</div>
+
 			<div class="OrderFrame">
 					<!--------------Название проекта-------------->
 						<h4 class="OrderFrame">Название проекта</h4>
@@ -96,8 +105,8 @@
 						</table>	
 		
 						<button class="OrderFrame">Откликнуться</button>	
-					</div>
-					<div class="OrderFrame">
+			</div>
+			<div class="OrderFrame">
 							<!--------------Название проекта-------------->
 								<h4 class="OrderFrame">Название проекта</h4>
 							<!--------------Описание заказа-------------->
@@ -110,11 +119,40 @@
 								</table>	
 				
 								<button class="OrderFrame">Откликнуться</button>	
-							</div>
+			</div>
+
+			<div class="OrderFrame">
+					<!--------------Название проекта-------------->
+						<h4 class="OrderFrame">Название проекта</h4>
+					<!--------------Описание заказа-------------->
+						<p class="OrderFrame">Текст, чтобы не было пусто. 
+						   Текст, чтобы не было пусто.
+						   Текст, чтобы не было пусто. </p>
+					<!--------------социальные сети заказа-------------->
+						<table class="OrderFrame">
+		
+						</table>	
+		
+						<button class="OrderFrame">Откликнуться</button>	
+			</div>
+			<div class="OrderFrame">
+							<!--------------Название проекта-------------->
+								<h4 class="OrderFrame">Название проекта</h4>
+							<!--------------Описание заказа-------------->
+								<p class="OrderFrame">Текст, чтобы не было пусто. 
+								   Текст, чтобы не было пусто.
+								   Текст, чтобы не было пусто. </p>
+							<!--------------социальные сети заказа-------------->
+								<table class="OrderFrame">
+				
+								</table>	
+				
+								<button class="OrderFrame">Откликнуться</button>	
+			</div>
 		</form>
 	</div>
 
-	<!--информация о нас-->
+<!--информация о нас-->
 	<footer>
 			<h3>Информация о нас</h3>
 			<p>Мы группа независимых разработчиков.</p>
@@ -123,7 +161,5 @@
 			<h6><p><b> All rights NOT reserved.</b></p></h6>
 	</footer>
 	
-
-
-
-</body></html>
+</body>
+</html>

@@ -2,44 +2,27 @@
         padding:0px;
         margin: 0px;
         border: 0px;
+
+        background-image: url(../items/Image.png);
+        background-attachment: fixed;
+        background-repeat: repeat;      
     }
     header{
         margin-bottom: 5px;
         opacity: 0.80;
         border-bottom: 3px solid black;
         background-color: whitesmoke;
+
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding-top: 5px;
-        padding-right: 5px;
-        padding-bottom: 5px;
-        padding-left: 5px;
-    }
-    #welcome-land {
-        margin-top: 2vw;
-        margin-bottom: 1px;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        padding: 10px;
-        border-radius: 10px;
+
+        padding: 5px;
     }
     img{
         color: hsl(357, 92%, 66%);
-        font-family: 'Literata', serif;
         font-family: 'Ubuntu Condensed', sans-serif;
-    }
-    #navbar {
-        display: flex;
-        flex-direction: row;
-    }
-    .navbar {
-        padding-top: 10px;
-        padding-right: 10px;
-        padding-bottom: 10px;
-        padding-left: 10px;
-        min-width: 10vw;
     }
     aside{
         padding: 5px;
@@ -48,7 +31,7 @@
     }
     div{
         opacity: 0.97;
-        
+       
         border-radius: 5%;
         border-top-right-radius: 1%;
     }
