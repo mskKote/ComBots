@@ -71,3 +71,10 @@ div#content{
     opacity: 0.99;
     
 }
+/* ABOUT_US.CSS */
+div#g_in{
+    background-color: #353838;
+}
+div.in{
+    background-color: #414545;
+}
