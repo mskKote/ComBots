@@ -13,10 +13,10 @@ a{
 }
 
 /*LOBBY.CSS*/
-div#workspace{
+div.workspace{
     background-color: #353838;    
 }
-div#welcome-land {
+div.welcome-land {
     background-color: #353838;
     opacity: 0.99;
 }
@@ -27,16 +27,7 @@ button.navbar{
 button.authorization{
     background-color: hsl(0, 77%, 58%);
 }
-/*Настройки поиска*/
-p.search {   
-    background-color: #1a1c20; 
-}
-button.filter_btn{
-    color: gainsboro;
-    background-color: rgba(255, 245, 238, 0.335);
-    font-weight: lighter;
-    opacity: 1;
-} 
+
 /*Слот с заказом*/
 input.search_f {
     background-color:   #2b2d33;
@@ -72,9 +63,6 @@ div#content{
     
 }
 /* ABOUT_US.CSS */
-div#g_in{
-    background-color: #353838;
-}
-div.in{
+div.paragraph{
     background-color: #414545;
 }
