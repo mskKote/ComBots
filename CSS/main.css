@@ -1,3 +1,4 @@
+/*Контейнеры*/
     body{
         padding:0px;
         margin: 0px;
@@ -24,13 +25,6 @@
         padding: 2px;
         z-index: 99;
     }
-    header h1{
-        margin-left: 8px;
-    }
-    img{
-        color: hsl(357, 92%, 66%);
-        font-family: 'Ubuntu Condensed', sans-serif;
-    }
     aside{
         padding: 5px;
         border-radius: 5%;
@@ -38,34 +32,37 @@
     }
     div{
         opacity: 0.97;
-       
+        
         border-radius: 5%;
         border-top-right-radius: 1%;
+        background-color: whitesmoke;
     }
-
     footer{
         margin-top: 1%;
-        padding: 10px 5% 1px 3%;
+        padding: 10px 5% 5px 3%;
 
         border-top: 3px solid black;
         background-color: whitesmoke;
         opacity: 0.80;
     }
-    
+/*Элементы*/
+    img{
+        color: hsl(357, 92%, 66%);
+        font-family: 'Ubuntu Condensed', sans-serif;
+    }
     button{
-        font-family: 'Roboto Slab', serif;
-        font-weight: normal;  
+        font-family: 'Roboto Slab', serif; 
         margin: 0.1px 0%;
         background-color: rgba(255, 245, 238, 0.335);
         text-align: center;
         cursor: pointer;
     }
-
+/*Заголовки*/
     h1, h2 {
         font-family: 'Russo One', sans-serif; 
         font-weight: lighter;
+        margin-left: 8px;
     }
-
     h3, h4{
         font-family: 'Literata', serif;
     }
@@ -75,14 +72,74 @@
         margin-block-end: 0%;
         font-weight: bolder;
     }
+/*Форматирование текста*/
     p {
         font-size: 15px;
         font-family: 'Ubuntu Condensed', sans-serif;
     }
     a {
-        color: black;  
+        color: black;
+        text-decoration: none; 
+        border-bottom: 1.5px dashed black; 
     }
-    ::placeholder{
-        color:gainsboro;
-        font-family: 'Roboto Slab', serif;
+/*Стили, которые есть во всех файлах*/
+::placeholder{
+    color:gainsboro;
+    font-family: 'Roboto Slab', serif;
+}
+/*Верхняя менюшка header*/    
+    #navbar {
+        display: flex;
+        flex-direction: row;
+    }
+    button.navbar {
+        padding: 10px;
+        min-width: 10vw;
+        margin-right: 0.1vw;
+        border-color: #2b2d33;
+        border-radius: 5px;
+        font-weight: bold;
+        background-color: lightgrey;
+        
+    }   
+    button.authorization{
+        background-color: hsl(0, 100%, 78%);
+        font-weight: bolder;
+         
+        border: 1.5px solid black;
+        border-bottom: 3px solid black;
+        margin-right: 10px;
+    }
+    h1#TOP_article{
+        cursor: pointer; 
+    }
+
+/*Слот с заказом*/
+    div.OrderFrame{
+        width: 46%;
+        float: left;
+
+        border-radius: 10px;
+        
+        padding: 0% 1%;
+        margin: 0.2% 0% 1% 1.33333%;
+
+        background-color: gainsboro;
+        opacity: 1;
+    }
+    button.OrderFrame{
+        background-color: lightpink;
+        opacity: 1;
+        margin: 0% 0% 0.5% 1%;
+        padding: 3px;
+        border: 2px solid gainsboro;
+        /* border-radius: 10px; */
+        border-radius: 10px;
+    }
+    h4, h5, h6 .OrderFrame{
+        margin-block-start: 0%;
+        margin-block-end: 0%; 
+    }    
+    p.OrderFrame{
+        margin-left:  1%;
     }

@@ -6,7 +6,6 @@
 	<link rel="icon" type="image/png" href="../items/favicon.png" >
     <link rel="stylesheet" type="text/css" href="../CSS/main.css">
     <link rel="stylesheet" type="text/css" href="../CSS/user_office.css">
-    <script defer src="../JS/UIcontroller.js"> </script>
     <!--Через кнопку выбираем либо 
 	включать файл ниже, либо нет. ID для JS.
     -->	
@@ -20,40 +19,46 @@
 
  </head>
 <body>
+    <script defer src="../JS/UIcontroller.js"> </script>
+    <!--Верхняя менюшка для авторизации-->
     <header>
-		<h1 id="TOP_article" onclick="history.back()">ComBots</h1>				
-					
-		<div id="navbar">
-		<button type="button" class="navbar" onclick="theme()">Выкл/вкл свет</button>
-	</div>
-	<!--Эта кнопка временно будет вести в личный кабинет.-->
-	<form action="./HTML/user_office.html">
-		<button type="submit" class="authorization navbar" onclick="">Авторизация</button>
-	</form>	
-	</header>	
+        <h1 id="TOP_article" onclick="window.location='index.html'">ComBots</h1>				
+                            
+        <div id="navbar">
+            <button type="button" class="navbar">О нас</button>
+            <button type="button" class="navbar">Продукты</button>
+            <button type="button" class="navbar">FAQ</button>
+            <button type="button" class="navbar">Поддержка</button>
+            <button type="button" class="navbar" 
+            id="light" onclick="theme()">Выключить свет</button>
+        </div>
+         <!--Эта кнопка временно будет вести в личный кабинет.-->
+        <form action="../HTML/user_office.html">
+            <button type="submit" class="authorization navbar" onclick="">Авторизация</button>
+        </form>	
+    </header>
     
-    <div class="div_collection">
     <!--левая менюшка-->      
         <aside id="nav">
             <h4>О себе</h4>
-            <button>Развернуть</button>
-            <h6>Как</h6>
             <button class="navbar">Бухгалтерия</button>
-		    <button class="navbar"><a href="../HTML/order_dialog.html">Заказать бота</a></button>  
+            <button class="navbar" onclick="window.location = 'order_dialog.html'">
+            Заказать бота</button> 
+            <button class="navbar"> > > > > </button> 
         </aside>
 
     <!--Правая менюшка-->    
         <aside id="menu">
-            <button>Развернуть содержание пункта</button>
+            <h4 id="menu_description">Ваш профиль со стороны будет выглядеть так:</h4>
         </aside>
     <!--Основное поле-->  
          <div id="content">
-        <p>содержание раздела настроек</p>
-        <p>аватарка, смена пароля, бухгалтерия, 
-            подтверждение опыта, пункт о себе</p>
+            <h4>Cодержание раздела настроек:
+            <br>аватарка, смена пароля, бухгалтерия, подтверждение опыта,
+            <br>пункт о себе в кратце[Новичок, профи, заказчик, обучаемый, учитель итд]
+            <br> и описание, которое даст себе человек</h4>
         </div>
-    </div>
-
+    
 	<!--информация о нас-->
 	<footer>
         <h3>Информация о нас</h3>

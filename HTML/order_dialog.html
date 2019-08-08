@@ -7,6 +7,10 @@
     <link rel="stylesheet" type="text/css" href="../CSS/main.css">
     <link rel="stylesheet" type="text/css" href="../CSS/user_office.css">
     <link rel="stylesheet" type="text/css" href="../CSS/order_dialog.css">
+    <!--Через кнопку выбираем либо 
+	включать файл ниже, либо нет. ID для JS.
+    -->	
+    <link id="theme" rel="stylesheet" type="text/css">
    <!--Дикий набор шрифтов на все случаи жизни - CHECK
 	literata, Oswald, PT+Sans, 
 	Roboto Slab, Ubuntu Condensed  для текста
@@ -16,38 +20,60 @@
 
  </head>
 <body>
+    <script defer src="../JS/UIcontroller.js"> </script>
+    <!--Верхняя менюшка для авторизации-->
     <header>
-		<article>
-		    <h2><a href="../index.html">Обратно на главную</a></h2>
-        </article>
+        <h1 id="TOP_article" onclick="window.location='index.html'">ComBots</h1>				
+    						
+        <div id="navbar">
+            <button type="button" class="navbar">О нас</button>
+            <button type="button" class="navbar">Продукты</button>
+            <button type="button" class="navbar">FAQ</button>
+            <button type="button" class="navbar">Поддержка</button>
+            <button type="button" class="navbar" 
+            id="light" onclick="theme()">Выключить свет</button>
+        </div>
+         <!--Эта кнопка временно будет вести в личный кабинет.-->
+        <form action="../HTML/user_office.html">
+            <button type="submit" class="authorization navbar" onclick="">Авторизация</button>
+        </form>	
     </header>
-    
 
-<div class="div_collection">
+    <!--левая менюшка--> 
     <aside id="nav">
         <h4>менюшка с навигацией</h4>
         <p>Она будет содержать кнопку маленькие иконки для всех действий.</p>
         <button> > > > > > > > > > > >  </button>
     </aside>
-    <aside id="OrderFrame">
-            <!--------------Название проекта-------------->
-                <h4 id="OrderFrame">Название проекта</h4>
-            <!--------------Описание заказа-------------->
-                <p id="OrderFrame">
-                Текст, чтобы не было пусто. 
-                Текст, чтобы не было пусто.
-                Текст, чтобы не было пусто. </p>
-            <!--------------социальные сети заказа-------------->
-                <table id="OrderFrame">
-        
-                </table>	
-            <!--------------Тут это не рабочая кнопка.-------------->    
-                <button id="OrderFrame">Откликнуться</button>	           
+    <!--Поясняющее поле-->
+    <div id="order_explanation">
+        <h4> <-- Именно так
+            <br> ваше объявление 
+            <br>будет выглядеть  на сайте
+        </h4>
+        <p>[Реализация пояснения не законченно]</p>
+
+    </div>
+     <!--менюшка-->
+    <aside id="OrderFrame">    
+        <!--------------Название проекта-------------->
+            <h4 class="OrderFrame">Название проекта</h4>
+        <!--------------Описание заказа-------------->
+            <p class="OrderFrame">Текст, чтобы не было пусто. 
+            Текст, чтобы не было пусто.
+            Текст, чтобы не было пусто. </p>
+        <!--------------социальные сети заказа-------------->
+           <table class="OrderFrame">
+
+           </table>	
+
+           <button type="button" class="OrderFrame">Откликнуться</button>	         
     </aside>
+
+    <!--Основное поле-->  
     <div id="content">
         <p>Ввод предустановленных пунктов[описание, стоимость итд]</p>
     </div>
-</div>
 
 	<!--информация о нас-->
 	<footer>

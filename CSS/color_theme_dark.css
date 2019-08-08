@@ -7,18 +7,25 @@ div, body, header, aside, button, footer{
 button{
     background-color: rgba(255, 245, 238, 0.335); 
 }
+a{
+    color: gainsboro;  
+    border-bottom: 1.5px dashed gainsboro;
+}
+
+/*LOBBY.CSS*/
 div#workspace{
     background-color: #353838;    
 }
+div#welcome-land {
+    background-color: #353838;
+    opacity: 0.99;
+}
 
+button.navbar{
+    background-color: rgba(255, 245, 238, 0.335); 
+}
 button.authorization{
-    background-color: rgba(255, 245, 238, 0.335);
-    border-top-color: gainsboro;
-    border-bottom-color: hsl(12, 69%, 50%);
-
-    border-left-color:  gainsboro;
-    border-right-color: gainsboro; 
-    opacity: 1; 
+    background-color: hsl(0, 77%, 58%);
 }
 /*Настройки поиска*/
 p.search {   
@@ -42,13 +49,25 @@ div.OrderFrame{
 }
 button.OrderFrame{
     background-color: rgba(255, 245, 238, 0.335);
-    color: gainsboro;
+    color: whitesmoke;
+    border-color: #414545;
 }
-
-a{
-    color: gainsboro;  
-}
-div#welcome-land {
-    background-color: #353838;
+/*USER_OFFICE.CSS*/
+div#nav #menu #content{
+    color: whitesmoke; 
+    background-color:  #353838!important; 
     opacity: 0.99;
+}
+h4#menu_description{
+    border-bottom: 2px dashed whitesmoke;
+}
+/*ORDER_DIALOG.CSS*/
+aside#OrderFrame{
+    background-color:  #353838; 
+}
+div#content{
+    color: whitesmoke; 
+    background-color:  #353838!important; 
+    opacity: 0.99;
+    
 }

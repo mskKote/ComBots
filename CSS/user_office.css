@@ -1,47 +1,32 @@
-
-    div.collection{
-        display: none;
-    }
+         /*Левая менюшка*/
         aside#nav {
             float: left;
-
-            font: inherit;
-            background: inherit;
-            border: inherit;
-            
+ 
             padding: 5px;
 
             height: 250px;
-            width: 10%;
+            width: 10vw;
             margin-left:0.8%; 
-            background-color: whitesmoke;    
+                
         }
-        div#content{
-            font: inherit;
-           
-            border: solid black 1px;
-            border-radius: 0.8%;
-            background-color: whitesmoke;
-            
-
-            height: 400px;
-           
-            margin-left: 12%;
-            margin-right: 27%;
-        }
-        
+        /*Правая менюшка*/
         aside#menu {
             float: right;
 
-            font: inherit;
-            background: inherit;
-            border: inherit;
-            
             padding: 5px;
 
-            height: 250px;
-            width: 10%;
-            margin-left:0.8%; 
-/*                  10.8%              */
-            background-color: whitesmoke;    
+            width: 15vw;
+            margin-right:1vw;   
+        }
+        h4#menu_description{
+            border-bottom: 2px dashed black;
+        }
+        div#content{       
+            border: solid black 1px;
+            border-radius: 0.8%;
+            
+            height: 400px;
+            padding: 10px;
+            margin-left: 12%;
+            margin-right: 18vw;
         }
