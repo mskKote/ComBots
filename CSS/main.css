@@ -24,7 +24,6 @@ lightpink - розовый
         padding-top: 150px;
     }
     header{
-        margin-bottom: 5px;
         opacity: 0.95;
         border-bottom: 3px solid black;
         background-color: whitesmoke;
@@ -101,10 +100,10 @@ lightpink - розовый
     }
 
 /*Стили, которые есть во всех файлах*/
-::placeholder{
-    color:gainsboro;
-    font-family: 'Roboto Slab', serif;
-}
+    ::placeholder{
+        color:gainsboro;
+        font-family: 'Roboto Slab', serif;
+    }
 /*Верхняя менюшка header*/    
     #navbar {
         display: flex;
@@ -130,6 +129,7 @@ lightpink - розовый
     }
     h1#TOP_article{
         cursor: pointer; 
+        
     }
 
 /*Слот с заказом*/
@@ -142,15 +142,15 @@ lightpink - розовый
         padding: 0% 1%;
         margin: 0.2% 0% 1% 1.33333%;
 
-        background-color: gainsboro;
+        background-color: lightgrey;
         opacity: 1;
     }
     button.OrderFrame{
         background-color: lightpink;
         opacity: 1;
         margin: 0% 0% 0.5% 1%;
-        padding: 3px;
-        border: 2px solid gainsboro;
+        padding: 3px 4px;
+        border: 2px solid lightgrey;
         /* border-radius: 10px; */
         border-radius: 10px;
     }

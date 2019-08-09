@@ -1,15 +1,27 @@
 div.paragraph{
-    width: 60%;
     float: none;
 
     padding: 0% 1%;
     margin: 0% 8vw;
-    background-color: gainsboro;
+    background-color: lightgrey;
     opacity: 1;
     border-radius: 0%;
     border: 2px solid #1a1c20;
+    border-top: 1px solid #1a1c20;
+    border-bottom: 1px solid #1a1c20;   
 }
 h2.paragraph{
     margin-block-end: 0vh;
     margin-block-start: 0vh;
+}
+h3.paragraph{
+    margin: 0vh 1vw;
+}
+ul.paragraph{padding-left: 9.5vw; padding-right: 8vw}
+li{
+    border-bottom: #414545 dotted 2px;
+}
+p.paragraph{
+    margin-left:2vh; 
+    margin-right:2vh; 
 }
