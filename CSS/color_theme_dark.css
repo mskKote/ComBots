@@ -1,8 +1,13 @@
 /*Изменения глобально*/
-div, body, header, aside, button, footer{
+div, body, aside, button, footer{
     color: whitesmoke; 
     background-color:  #353838; 
     opacity: 0.99;
+}
+header{
+    color: whitesmoke; 
+    background-color:   #2b2d33; 
+    opacity: 0.99; 
 }
 button{
     background-color: rgba(255, 245, 238, 0.335); 
@@ -22,8 +27,8 @@ div.welcome-land {
 }
 
 button.navbar{
-    background-color: rgba(255, 245, 238, 0.335); 
-}
+    background-color: #2b2d33;
+}    
 button.authorization{
     background-color: hsl(0, 77%, 58%);
 }
