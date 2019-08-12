@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
- <head>
+<head>
 	<title>ComBots</title>
 	<meta charset="UTF-8">
 	<link rel="icon" type="image/png" href="../items/favicon.png" >
     <link rel="stylesheet" type="text/css" href="../CSS/main.css">
     <link rel="stylesheet" type="text/css" href="../CSS/user_office.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/about_us.css">
     <!--Через кнопку выбираем либо 
 	включать файл ниже, либо нет. ID для JS.
     -->	
@@ -17,7 +18,7 @@
     -->
     <link href="https://fonts.googleapis.com/css?family=Literata|Oswald|PT+Sans|Roboto+Slab|Russo+One|Ubuntu+Condensed&display=swap" rel="stylesheet">
 
- </head>
+</head>
 <body>
     <script defer src="../JS/UIcontroller.js"> </script>
     <!--Верхняя менюшка для авторизации-->
@@ -42,23 +43,36 @@
     
     <!--левая менюшка-->      
         <aside id="nav">
-            <h4>О себе</h4>
-            <button class="navbar">Бухгалтерия</button>
-            <button class="navbar" onclick="window.location = 'order_dialog.html'">
-            Заказать бота</button> 
-            <button class="navbar"> > > > > </button> 
+            <h4 class="visualizing">Личный кабинет</h4>
+
+            <button class="navbar nav">Настройки аккаунта</button>
+            <button class="navbar nav">Бухгалтерия</button>
+            <button class="navbar nav" onclick="window.location = 'order_dialog.html'">
+                Разместить объявление</button> 
+            <button class="navbar nav"> > > > > </button> 
         </aside>
 
     <!--Правая менюшка-->    
-        <aside id="menu">
-            <h4 id="menu_description">Ваш профиль со стороны будет выглядеть так:</h4>
+        <aside id="visualizing">
+            <h4 class="visualizing">Ваш профиль со стороны выглядит так:</h4>
+            <img src="../items/false_avatar.jpg" alt="А картинки то нет."></img>
+            <p class="visualizing">Никнейм</p>
+            <p class="visualizing">Опыт < N > </p>
+            <p class="visualizing">Статус на бирже</p> 
+            <p class="visualizing">О себе</p>
         </aside>
     <!--Основное поле-->  
          <div id="content">
+        <div class="corona">		
+            <h2 class="corona">Настройки аккаунта</h2>
+        </div>
+
             <h4>Cодержание раздела настроек:
             <br>аватарка, смена пароля, бухгалтерия, подтверждение опыта,
             <br>пункт о себе в кратце[Новичок, профи, заказчик, обучаемый, учитель итд]
-            <br> и описание, которое даст себе человек</h4>
+            <br> и описание, которое даст себе человек
+            описание предыдущих контрактов
+            Согласие на куки, отключение майнера</h4>
         </div>
     
 	<!--информация о нас-->

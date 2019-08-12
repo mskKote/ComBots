@@ -53,7 +53,7 @@ lightpink - розовый
         margin-top: 1%;
         padding: 10px 5% 10px 3%;
 
-        border-top: 3px solid black;
+        border-top: 3px solid #1a1c20;
         background-color: whitesmoke;
         opacity: 0.80;
     }
@@ -125,8 +125,8 @@ lightpink - розовый
         background-color: hsl(0, 100%, 78%);
         font-weight: bolder;
         border-radius: 5px;
-        border: 1px solid black;
-        margin: 0px 0px;
+        border: 1px solid #1a1c20;
+        margin: 0px;
         margin-right: 10px;
     }
     h1#TOP_article{
