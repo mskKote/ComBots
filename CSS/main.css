@@ -169,6 +169,7 @@ lightpink - розовый
     div.workspace {
         margin: 0vw 5vw 2vw 5vw;
         border: 2px solid black;
+        border-top: none;
         border-radius: 10px;
         
         background-color: whitesmoke;

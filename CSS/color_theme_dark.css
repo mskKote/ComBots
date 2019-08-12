@@ -28,7 +28,9 @@ div.welcome-land {
 
 button.navbar{
     background-color: #2b2d33;
+    
 }    
+button.nav{background-color: #353838;}
 button.authorization{
     background-color: hsl(0, 77%, 58%);
 }
