@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
  <head>
-	<title>ComBots</title>
+	<title>ComBots | BotTrade</title> <!-- еще вариант BotDeal / можно оставить просто ComBots(отстой)-->
 	<meta charset="UTF-8">
 	<link rel="icon" type="image/png" href="../items/favicon.png" >
     <link rel="stylesheet" type="text/css" href="../CSS/main.css">
@@ -78,6 +78,66 @@
                     <h2 class="corona">Заказ</h2>
                 </div>
         <p>Ввод предустановленных пунктов[описание, стоимость итд]</p>
+	        <!-- ********************** -->
+        <hr>
+        <form>
+            <!-- <button>Заказать бота</button>  нужна вообще жта кнопка? --> 
+            <fieldset>
+                <legend>Бот на заказ <img alt="help" src="../items/question.png" title="Блабла"></legend>
+                <label>
+                    Категория вашего бота : <img alt="help" src="../items/question.png" title="Блабла"> <br>
+                    <p class="p_list"> <input type="checkbox">Чат-боты</p>
+                    <p class="p_list"> <input type="checkbox">Онлайн-консультанты</p>
+                    <p class="p_list"> <input type="checkbox">Экспериментальные боты</p>
+                    <p class="p_list"> <input type="checkbox">Развлекательные боты</p>
+                    <p class="p_list"> <input type="checkbox">Боты для модерации</p>
+                    <p class="p_list"> <input type="checkbox">Боты для игрового чата</p>
+                    <p class="p_list"> <input type="checkbox">Боты для сбора статистики</p>
+                    <p class="p_list"> <input type="checkbox">Обучающиеся боты</p>
+                    <p class="p_list"> <input type="checkbox">Улучшить уже существующего бота</p>
+                    <p class="p_list"> <input type="checkbox">Другая <br>
+                        <input placeholder="Свой вариант" type="text" id="user_category">
+                    </p>
+                </label>
+                <br>
+                <label>
+                    Для какой соц. сети будет ваш бот? : <img alt="help" src="../items/question.png" title="Блабла"> <br>
+                    <p class="p_list"> <input type="checkbox">Twitter 
+                        <img src="../items/twitter_logo.png" alt="twitter">
+                    </p>
+                    <p class="p_list"> <input type="checkbox">Facebook 
+                        <img src="../items/facebook_logo.png" alt="facebook">
+                    </p>
+                    <p class="p_list"> <input type="checkbox">В Контакте
+                        <img src="../items/vk_logo.png" alt="vk">
+                    </p>
+                </label>
+                <br>
+                <label>
+                    Описание вашего бота (функционал, требования и т.д.) : <img alt="help" src="../items/question.png" title="Блабла"> <br>
+                    <textarea placeholder="Описание - сюда" required></textarea>
+                </label>
+                <br>
+                <label> <!-- подправить поля - выровнить по вертикали -->
+                    Ограничение по времени : <img alt="help" src="../items/question.png" title="Блабла"> <br>
+                    <input type="text" placeholder="ЧЧ:ДД:ММ"> <br> <!-- подсказка - в каком формате писать | ее можно вынести над полем(?)-->
+                    <!--вместо одного поля можно сделать три(или больше) первое -часы, второе-дни и тд-->
+                    <!-- <span>* по умолчанию ограничения нет</span> --> 
+                </label>
+                <br>
+                <label>
+                    Как с вами связаться? : <img alt="help" src="../items/question.png" title="Блабла"> <br>
+                    <span class="type_communication">email</span> <br>
+                    <input class="type_communication" type="email" placeholder="iLoveComBots@email.ru"> <br> 
+                    <span class="type_communication">или/и соц.сети</span> <br>
+                    <input class="type_communication" type="text" placeholder="vk.com/ComBots">
+                </label>
+                <br>
+                <label>
+                    <input type="submit" value="Выставить на биржу">
+                </label>
+            </fieldset>
+        </form>
     </div>
 
 	<!--информация о нас-->
