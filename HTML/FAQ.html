@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+	<title>ComBots</title>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="../items/favicon.png" >
+	<link rel="stylesheet" type="text/css" href="../CSS/main.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/lobby.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/FAQ.css">
+	<!--Через кнопку выбираем либо 
+	включать файл ниже, либо нет. ID для JS.
+	-->	
+	<link id="theme" rel="stylesheet" type="text/css">
+	<!--Дикий набор шрифтов на все случаи жизни - Check.
+	literata, Oswald, PT+Sans, 
+	Roboto Slab, Ubuntu Condensed  для текста
+	Russo One для заголовков
+	-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Literata|Oswald|PT+Sans|Roboto+Slab|Russo+One|Ubuntu+Condensed&display=swap">
+ </head>
+<body>
+	<script defer src="../JS/UIcontroller.js"> </script>
+
+<!--Верхняя менюшка для авторизации-->
+	<header>
+			<h1 id="TOP_article" onclick="window.location='index.html'">ComBots</h1>				
+							
+		<div id="navbar">
+			<form action="../HTML/about_us.html">
+				<button type="submit" class="navbar">О нас</button>
+			</form>
+			<button type="button" class="navbar">Продукты</button>
+			<form action="../HTML/FAQ.html">
+				<button type="submit" class="navbar">FAQ</button>
+			</form>
+			<button type="button" class="navbar">Поддержка</button>
+
+			<button type="button" class="navbar" 
+			style="border-right:none" id="light" onclick="theme()">Выключить свет</button>
+		</div>
+		<!--Эта кнопка временно будет вести в личный кабинет.-->
+		<!-- the form to be viewed as dialog-->
+
+		<form action="../HTML/user_office.html">
+			<button type="submit" class="authorization navbar" onclick="">Авторизация</button>
+		</form>	
+	</header>	
+
+	<div id="tab" class="workspace">
+		<h2>Раздел FAQ</h2>
+	</div>
+
+    <div id="gen_div" class="workspace">
+		<br>
+		<input type="checkbox" id="ht1" class="hide">
+        <label for="ht1">
+            <h4>Текст, чтобы не было пусто.</h4>
+        </label>
+        <div class="answer">
+            <p>Текст, чтобы не было пусто. Текст, чтобы не было пусто. 
+            Текст, чтобы не было пусто. Текст, чтобы не было пусто.</p>
+		</div>
+		<hr>
+		<input type="checkbox" id="ht2" class="hide">
+        <label for="ht2">
+            <h4>Текст, чтобы не было пусто.</h4>
+        </label>
+        <div class="answer">
+            <p>Текст, чтобы не было пусто. Текст, чтобы не было пусто. 
+            Текст, чтобы не было пусто. Текст, чтобы не было пусто.</p>
+		</div>
+		<hr>
+		<input type="checkbox" id="ht3" class="hide">
+        <label for="ht3">
+            <h4>Текст, чтобы не было пусто.</h4>
+        </label>
+        <div class="answer">
+            <p>Текст, чтобы не было пусто. Текст, чтобы не было пусто. 
+            Текст, чтобы не было пусто. Текст, чтобы не было пусто.</p>
+		</div>
+		<hr>
+		<input type="checkbox" id="ht4" class="hide">
+        <label for="ht4">
+            <h4>Текст, чтобы не было пусто.</h4>
+        </label>
+        <div class="answer">
+            <p>Текст, чтобы не было пусто. Текст, чтобы не было пусто. 
+            Текст, чтобы не было пусто. Текст, чтобы не было пусто.</p>
+		</div>
+		<hr>
+    </div>
+
+<!--информация о нас-->
+	<footer>
+		<h3>Информация о нас</h3>
+		<p>Мы группа независимых разработчиков.</p>
+		<p>Связаться с нами: ну и тут какой-нибудь майл </p>
+		
+		<h6><p><b> All rights NOT reserved.</b></p></h6>
+		<!-- Копирайт с сайта пиксабай если мы продолжим юзать их картинки -->
+		Image from <a href="https://pixabay.com" target="_blank">Pixabay</a>
+	</footer>
+
+</body>
+</html>
