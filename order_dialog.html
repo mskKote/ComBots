@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+	<title>ComBots | BotTrade</title> <!-- еще вариант BotDeal / можно оставить просто ComBots(отстой)-->
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="../items/favicon.png" >
+    <link rel="stylesheet" type="text/css" href="../CSS/main.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/user_office.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/order_dialog.css">
+    <!--Через кнопку выбираем либо 
+	включать файл ниже, либо нет. ID для JS.
+    -->	
+    <link id="theme" rel="stylesheet" type="text/css">
+   <!--Дикий набор шрифтов на все случаи жизни - CHECK
+	literata, Oswald, PT+Sans, 
+	Roboto Slab, Ubuntu Condensed  для текста
+	Russo One для заголовков
+    -->
+    <link href="https://fonts.googleapis.com/css?family=Literata|Oswald|PT+Sans|Roboto+Slab|Russo+One|Ubuntu+Condensed&display=swap" rel="stylesheet">
+
+ </head>
+<body>
+    <script defer src="../JS/UIcontroller.js"> </script>
+    <!--Верхняя менюшка для авторизации-->
+    <header>
+        <h1 id="TOP_article" onclick="window.location='index.html'">ComBots</h1>				
+    						
+        <div id="navbar">
+		<form action="../HTML/about_us.html">
+			<button type="submit" class="navbar">О нас</button>
+		</form>
+            	<button type="button" class="navbar">Продукты</button>
+		<form action="../HTML/FAQ.html">
+			<button type="submit" class="navbar">FAQ</button>
+		</form>
+            	<button type="button" class="navbar">Поддержка</button>
+            	<button type="button" class="navbar" style="border-right: none"
+            		id="light" onclick="theme()">Выключить свет</button>
+        </div>
+         <!--Эта кнопка временно будет вести в личный кабинет.-->
+        <form action="../HTML/user_office.html">
+            <button type="submit" class="authorization navbar" onclick="">Авторизация</button>
+        </form>	
+    </header>
+
+    <!--левая менюшка--> 
+    <aside id="nav">
+        <h4>менюшка с навигацией</h4>
+        <p>Она будет содержать кнопку маленькие иконки для всех действий.</p>
+        <button> > > > > > > > > > > >  </button>
+    </aside>
+    <!--Поясняющее поле-->
+    <div id="order_explanation">
+        <h4> <-- Именно так
+            <br> ваше объявление 
+            <br>будет выглядеть  на сайте
+        </h4>
+        <p>[Реализация пояснения не законченно]</p>
+
+    </div>
+     <!--менюшка-->
+    <aside id="OrderFrame">    
+        <!--------------Название проекта-------------->
+            <h4 class="OrderFrame">Название проекта</h4>
+        <!--------------Описание заказа-------------->
+            <p class="OrderFrame">Текст, чтобы не было пусто. 
+            Текст, чтобы не было пусто.
+            Текст, чтобы не было пусто. </p>
+        <!--------------социальные сети заказа-------------->
+           <table class="OrderFrame">
+
+           </table>	
+
+           <button type="button" class="OrderFrame">Откликнуться</button>	         
+    </aside>
+
+    <!--Основное поле-->  
+    <div id="content">
+            <div class="corona">		
+                <h2 class="corona">Заказ бота</h2>
+            </div>
+       
+        <hr>
+        <form>
+            <!-- <button>Заказать бота</button>  нужна вообще жта кнопка? --> 
+            <fieldset>
+                <legend>Бот на заказ <img alt="help" src="../items/question.png" title="Блабла"></legend>
+                <label>
+                    Категория вашего бота : <img alt="help" src="../items/question.png" title="Блабла"> <br>
+                    <p class="p_list"> <input type="checkbox">Чат-боты</p>
+                    <p class="p_list"> <input type="checkbox">Онлайн-консультанты</p>
+                    <p class="p_list"> <input type="checkbox">Экспериментальные боты</p>
+                    <p class="p_list"> <input type="checkbox">Развлекательные боты</p>
+                    <p class="p_list"> <input type="checkbox">Боты для модерации</p>
+                    <p class="p_list"> <input type="checkbox">Боты для игрового чата</p>
+                    <p class="p_list"> <input type="checkbox">Боты для сбора статистики</p>
+                    <p class="p_list"> <input type="checkbox">Обучающиеся боты</p>
+                    <p class="p_list"> <input type="checkbox">Улучшить уже существующего бота</p>
+                    <p class="p_list"> <input type="checkbox">Другая <br>
+                        <input placeholder="Свой вариант" type="text" id="user_category">
+                    </p>
+                </label>
+                <br>
+                <label>
+                    Для какой соц. сети будет ваш бот? : <img alt="help" src="../items/question.png" title="Блабла"> <br>
+                    <p class="p_list"> <input type="checkbox">Twitter 
+                        <img src="../items/twitter_logo.png" alt="twitter">
+                    </p>
+                    <p class="p_list"> <input type="checkbox">Facebook 
+                        <img src="../items/facebook_logo.png" alt="facebook">
+                    </p>
+                    <p class="p_list"> <input type="checkbox">В Контакте
+                        <img src="../items/vk_logo.png" alt="vk">
+                    </p>
+                </label>
+                <br>
+                <label>
+                    Описание вашего бота (функционал, требования и т.д.) : <img alt="help" src="../items/question.png" title="Блабла"> <br>
+                    <textarea placeholder="Описание - сюда" required></textarea>
+                </label>
+                <br>
+                <label> <!-- подправить поля - выровнить по вертикали -->
+                    Ограничение по времени : <img alt="help" src="../items/question.png" title="Блабла"> <br>
+                    <input type="text" placeholder="ЧЧ:ДД:ММ"> <br> <!-- подсказка - в каком формате писать | ее можно вынести над полем(?)-->
+                    <!--вместо одного поля можно сделать три(или больше) первое -часы, второе-дни и тд-->
+                    <!-- <span>* по умолчанию ограничения нет</span> --> 
+                </label>
+                <br>
+                <label>
+                    Как с вами связаться? : <img alt="help" src="../items/question.png" title="Блабла"> <br>
+                    <span class="type_communication">email</span> <br>
+                    <input class="type_communication" type="email" placeholder="iLoveComBots@email.ru"> <br> 
+                    <span class="type_communication">или/и соц.сети</span> <br>
+                    <input class="type_communication" type="text" placeholder="vk.com/ComBots">
+                </label>
+                <br>
+                <label>
+                    <input type="submit" value="Выставить на биржу">
+                </label>
+            </fieldset>
+        </form>
+    </div>
+
+	<!--информация о нас-->
+	<footer>
+        <h3>Информация о нас</h3>
+        <p>Мы группа независимых разработчиков.</p>
+        <p>Связаться с нами: ну и тут какой-нибудь майл </p>
+        <h6><p><b> All rights NOT reserved.</b></p></h6>
+    </footer>
+	
+</body>
+</html>
