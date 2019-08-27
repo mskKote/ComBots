@@ -33,7 +33,9 @@
 			<form action="../HTML/FAQ.html">
 				<button type="submit" class="navbar">FAQ</button>
 			</form>
-            <button type="button" class="navbar">Поддержка</button>
+            <form action="../HTML/support.html">	
+				<button type="submit" class="navbar">Поддержка</button>
+			</form>
             <button type="button" class="navbar" style="border-right: none"
             id="light" onclick="theme()">Выключить свет</button>
         </div>
@@ -57,24 +59,87 @@
     <!--Правая менюшка-->    
         <aside id="visualizing">
             <h4 class="visualizing">Ваш профиль со стороны выглядит так:</h4>
-            <img src="../items/false_avatar.jpg" alt="А картинки то нет."></img>
+            <img id="avatar" src="../items/false_avatar.jpg" alt="А картинки то нет."></img>
             <p class="visualizing">Никнейм</p>
             <p class="visualizing">Опыт < N > </p>
             <p class="visualizing">Статус на бирже</p> 
             <p class="visualizing">О себе</p>
         </aside>
     <!--Основное поле-->  
-         <div id="content">
-        <div class="corona">		
-            <h2 class="corona">Настройки аккаунта</h2>
-        </div>
+        <div id="content">
+            <div class="corona">
+                <h2 class="corona">Настройки аккаунта</h2>
+            </div>
+     
+        <form>
+            <fieldset>
+                <label>
+                    <h5>Основное</h5>
+                    <p>Фотография 
+                        <input class="type_communication" type="text" placeholder="Адрес картинки/или берётся из соц. сети">  
+                        <img alt="help" src="../items/question.png" 
+                        title="При наведении на картинку меню справа будет подсвечивать нужный пункт">
+                    </p>
+                    <p>Никнейм                  
+                        <input class="type_communication" type="text" placeholder="Имя">
+                    </p>
 
-            <h4>Cодержание раздела настроек:
-            <br>аватарка, смена пароля, бухгалтерия, подтверждение опыта,
-            <br>пункт о себе в кратце[Новичок, профи, заказчик, обучаемый, учитель итд]
-            <br> и описание, которое даст себе человек
-            описание предыдущих контрактов
-            Согласие на куки, отключение майнера</h4>
+                    <p>Поменять пароль
+                        <input class="type_communication" type="text" placeholder="*******">                  
+                    </p>
+                </label>    
+                <hr>
+                
+                <label>
+                        <h5>Разрешить использовать cookie?</h5>   
+                </label>
+                <hr>
+
+                
+                <label>
+                    <h5>О себе</h5>
+                    <p>Кто Вы на бирже?</p>
+                    <p><input type="checkbox">Разработчик</p>   
+                    <p><input type="checkbox">Заказчик</p>
+                    <p><input type="checkbox">Учитель</p>
+
+                    <p>Расскажите о себе</p>
+                    <textarea required></textarea>
+                </label>
+                <hr>
+
+                <label>
+                        <h5>На чём вы специализируетесь?</h5>
+    
+                        <p class="p_list"> <input type="checkbox">Twitter 
+                            <img src="../items/twitter_logo.png" alt="twitter">
+                        </p>
+                        <p class="p_list"> <input type="checkbox">Facebook 
+                            <img src="../items/facebook_logo.png" alt="facebook">
+                        </p>
+                        <p class="p_list"> <input type="checkbox">В Контакте
+                            <img src="../items/vk_logo.png" alt="vk">
+                        </p>
+                </label>
+                <hr>
+
+                <label>
+                        <h5>Подтверждение опыта</h5>   
+                </label>
+                 <hr>
+
+                <label>
+                    <p>Где вам будет удобнее вести чат с клиентом?  <img alt="help" src="../items/question.png"
+                        title="В каких соц. сетях вы будете общаться с клиентом. 
+                        По умолчанию в почте"></p>
+                    <span class="type_communication">email</span> <br>
+                    <input class="type_communication" type="email" placeholder="iLoveComBots@email.ru"> <br> 
+                    <span class="type_communication">или/и соц.сети</span> <br>
+                    <input class="type_communication" type="text" placeholder="vk.com/ComBots">
+                </label>
+                <br>
+            </fieldset>
+        </form>
         </div>
     
 	<!--информация о нас-->

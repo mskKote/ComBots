@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>ComBots</title>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="../items/favicon.png" >
+    <link rel="stylesheet" type="text/css" href="../CSS/main.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/user_office.css">
+    
+    <!--Через кнопку выбираем либо 
+	включать файл ниже, либо нет. ID для JS.
+    -->	
+    <link id="theme" rel="stylesheet" type="text/css">
+    <!--Дикий набор шрифтов на все случаи жизни - CHECK
+	literata, Oswald, PT+Sans, 
+	Roboto Slab, Ubuntu Condensed  для текста
+	Russo One для заголовков
+    -->
+    <link href="https://fonts.googleapis.com/css?family=Literata|Oswald|PT+Sans|Roboto+Slab|Russo+One|Ubuntu+Condensed&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <script defer src="../JS/UIcontroller.js"> </script>
+    <!--Верхняя менюшка для авторизации-->
+    <header>
+        <h1 id="TOP_article" onclick="window.location='index.html'">ComBots</h1>				
+                            
+        <div id="navbar">
+			<form action="../HTML/about_us.html">
+				<button type="submit" class="navbar">О нас</button>
+			</form>
+            <button type="button" class="navbar">Продукты</button>
+			<form action="../HTML/FAQ.html">
+				<button type="submit" class="navbar">FAQ</button>
+			</form>
+            <button type="button" class="navbar" style="border-right: none"
+            id="light" onclick="theme()">Выключить свет</button>
+        </div>
+         <!--Эта кнопка временно будет вести в личный кабинет.-->
+        <form action="../HTML/user_office.html"> 
+            <button type="submit" class="authorization navbar" onclick="">Авторизация</button>
+        </form>	
+    </header>
+    <!--Основное поле-->  
+        <div id="content" style="min-height: auto; 
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        width: 30vw;">
+        <div class="corona">
+            <h2 class="corona">Поддержка</h2>
+        </div>
+     
+        <form>
+            <fieldset>
+              <h5>Это будет выскакивающее окно. Вот, что будет тут содержаться:</h5><hr>
+                <label>
+                    <h5>Выберите категорию проблемы</h5>
+ 
+                    <p>Опишите проблему</p>
+                    <textarea required></textarea>
+                </label>
+                <hr>
+
+                <label>
+                <p>Как поддержка может с вами связаться? <img alt="help" src="../items/question.png"
+                    title="В каких соц. сетях вы будете общаться с клиентом. 
+                    По умолчанию в почте"></p>
+                <span class="type_communication">email</span> <br>
+                <input class="type_communication" type="email" placeholder="iLoveComBots@email.ru"> <br> 
+                <span class="type_communication">или/и соц.сети</span> <br>
+                <input class="type_communication" type="text" placeholder="vk.com/ComBots">
+                </label>
+                <hr>
+                <p>Поддержка свяжется с вами в течении: Ну и тут подставить наше среднее время ответа
+                </p>
+            </fieldset>
+        </form>
+
+        </div>
+    
+</body>
+</html>

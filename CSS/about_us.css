@@ -19,7 +19,8 @@ h3.paragraph{
 }
 ul.paragraph{padding-left: 9.5vw; padding-right: 8vw}
 li{
-    border-bottom: #414545 dotted 2px;
+    padding-bottom: 2px;
+    border-bottom: whitesmoke dotted 2px;
 }
 p.paragraph{
     margin-left:2vh; 

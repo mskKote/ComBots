@@ -23,8 +23,8 @@
         div#content{       
             border: solid black 1px;
             border-radius: 0.8%;  
-            border-top-left-radius: 10%;        
-            border-top-right-radius: 10%; 
+            border-top-left-radius: 3%;        
+            border-top-right-radius: 3%; 
 
             min-height: 400px;
             padding: 0px;
@@ -50,15 +50,16 @@
                 margin-left: 5%;
             }
             input[type="text"], input[type="email"]{
-                width: 20vw;
+               
+                width: auto;
                 height: 4vh;
+
             }
             input#user_category{
                 margin-left: 1.5%;
             }
             input[type="submit"]{
-                width: 17vw;
-                height: 6vh;
+                min-height: 6vh;
 
                 margin-top: 4vh;
                 margin-left: 24vw;
@@ -79,11 +80,5 @@
                 margin-left: 5vw;
                 font-size: 17px;
             }
-            /*ИЗОБРАЖЕНИЯ*/
-            img{
-                /* width: 133px;
-                height: 130px; */
-                width: 25px;
-                height: 23px;
-                vertical-align: sub;
-            }
+
+
